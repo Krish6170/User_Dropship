@@ -1,0 +1,23 @@
+<% layout('layouts/boilerplate') %>
+<!-- search box needed -->
+<div class="row row-cols-1 row-cols-md-4 g-4">
+<% if(users.length){ %> 
+    <% for (let user of users ){%> 
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Title: <%= user.title%> </h5>
+          <p class="card-text">Id: <%=user._id%> </p>
+          <form action="/User/<%=user._id%>" method="GET">
+          <button class="byn btn-primary">Show</button>
+          </form>
+ 
+        </div>
+      </div>
+    </div>
+
+<% } %> 
+<% }else{%>
+  empty
+  <% } %>  
+</div>

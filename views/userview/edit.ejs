@@ -1,0 +1,29 @@
+
+<%layout('layouts/boilerplate')%>
+<form action="/User" method="POST">
+<div class="form-floating mb-3  ">
+  <input
+    type="text"
+    class="form-control form-control-sm"
+    id="title"
+    name="user_info[title]"
+    placeholder="Title"
+    value="<%=details.title %>"
+  />
+  <label for="title">Title</label>
+</div>
+
+<div class="form-floating mb-3">
+    <input
+      type="number"
+      class="form-control"
+      id="phone"
+      name="user_info[phone]"
+      placeholder="phone"
+      value="<%=details.phone%>"
+    />
+    <label for="phone">Phone</label>
+  </div>
+  <button class="btn btn-primary">Submit</button>
+
+</form>
