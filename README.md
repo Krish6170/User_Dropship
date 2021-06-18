@@ -1,6 +1,7 @@
 # Dropship
 
 Sr.No. 	URI         	HTTP Method  	                Result
+
 1 	    /User          GET                   Show list of all the users.
 
 2 	    /User          POST                Add details of new user.
